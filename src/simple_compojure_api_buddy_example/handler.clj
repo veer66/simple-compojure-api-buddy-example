@@ -4,7 +4,7 @@
 ;; https://gist.github.com/Deraen/ef7f65d7ec26f048e2bb
 ;; https://funcool.github.io/buddy-auth/latest/
 
-(ns exper-api1.handler
+(ns simple-compojure-api-buddy-example.handler
   (:require [compojure.api.sweet :refer :all]
             [ring.util.http-response :refer :all]
             [buddy.auth.backends :as backends]
@@ -42,8 +42,8 @@
     {:swagger
      {:ui "/"
       :spec "/swagger.json"
-      :data {:info {:title "Exper-api1"
-                    :description "Compojure Api example"}
+      :data {:info {:title "Simple Comojure-api + Buddy Example"
+                    :description "Simple Comojure-api + Buddy (Token Auth) Example"}
              :tags [{:name "api", :description "some apis"}]
              :securityDefinitions {:api_key {:type "apiKey"
                                              :name "Authorization"
